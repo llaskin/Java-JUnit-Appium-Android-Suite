@@ -17,7 +17,7 @@ import java.util.List;
 import org.openqa.selenium.OutputType;
 
 
-@TestObject(testObjectApiKey = "INSERT_API_KEY_HERE", testObjectSuiteId = INSERT_SUITE_NUMBER_HERE)
+@TestObject(testObjectApiKey = System.getEnv("TESTOBJECT_API_KEY"), testObjectSuiteId = System.getEnv("BUILD_TAG"))
 @RunWith(TestObjectAppiumSuite.class)
 public class SampleSauceTest {
 
