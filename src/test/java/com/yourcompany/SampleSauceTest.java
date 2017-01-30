@@ -1,23 +1,22 @@
 package com.yourcompany;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testobject.appium.junit.TestObjectTestResultWatcher;
-import org.testobject.rest.api.appium.common.TestObject;
 import org.testobject.appium.junit.TestObjectAppiumSuite;
-import io.appium.java_client.android.AndroidDriver;
+import org.testobject.appium.junit.TestObjectTestResultWatcher;
+
 import java.net.URL;
 import java.util.List;
-import org.openqa.selenium.OutputType;
 
-
-@TestObject(testObjectApiKey = System.getEnv("TESTOBJECT_API_KEY"), testObjectSuiteId = System.getEnv("BUILD_TAG"))
+//@TestObject(testObjectApiKey = "", testObjectSuiteId = 1)
 @RunWith(TestObjectAppiumSuite.class)
 public class SampleSauceTest {
 
