@@ -12,11 +12,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testobject.appium.junit.TestObjectAppiumSuite;
 import org.testobject.appium.junit.TestObjectTestResultWatcher;
+import org.testobject.rest.api.appium.common.TestObject;
 
 import java.net.URL;
 import java.util.List;
 
 //@TestObject(testObjectApiKey = "", testObjectSuiteId = 1)
+@TestObject
 @RunWith(TestObjectAppiumSuite.class)
 public class SampleSauceTest {
 
