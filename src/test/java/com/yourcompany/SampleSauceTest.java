@@ -39,7 +39,7 @@ public class SampleSauceTest {
         capabilities.setCapability("testobject_api_key", resultWatcher.getApiKey());
         capabilities.setCapability("testobject_test_report_id", resultWatcher.getTestReportId());
 
-        driver = new AndroidDriver(new URL("http://eu1.appium.testobject.com/wd/hub"), capabilities);
+        driver = new AndroidDriver(new URL("https://eu1.appium.testobject.com/wd/hub"), capabilities);
 
         resultWatcher.setAppiumDriver(driver);
 
